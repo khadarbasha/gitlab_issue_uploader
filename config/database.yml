@@ -1,0 +1,23 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: gitlab-issues-uploader_development_v1
+  pool: 5
+  username: postgres
+  password: postgres
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: gitlab-issues-uploader_test_v1
+  pool: 5
+  username: postgres
+  password: postgres
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: gitlab-issues-uploader_production_v1
+  pool: 5
+  username: postgres
+  password: postgres

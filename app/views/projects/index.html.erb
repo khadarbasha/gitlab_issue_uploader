@@ -1,0 +1,18 @@
+  <div class="span6 well">
+    <legend>
+      Pick the Project
+      <hr>
+    </legend>
+    <%= form_for :user_pick ,:url=>browse_issues_path do |f| %>
+    <div class="input-append">
+      <%= f.select :project, Project.all.collect{|p|[p.name,p.gitlab_id]}%>
+      <%= f.submit :Next, class:"input-medium btn btn-info"%>
+    </div>
+    <% end %>
+  </div>
+  <div class="span6 well">
+    <legend>
+      (or) Update the Project List
+    </legend>
+      <%= link_to "Update", projects_update_path, class:"input-medium btn btn-info"%>
+   </div>

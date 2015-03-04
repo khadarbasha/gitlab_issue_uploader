@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  tc_id: 
+  gitlab_id: 1
+
+two:
+  tc_id: 
+  gitlab_id: 1

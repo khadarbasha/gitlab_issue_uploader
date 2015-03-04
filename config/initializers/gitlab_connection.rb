@@ -1,0 +1,2 @@
+# Initializer will used to the initialize a connection with the gitlab. Scope of the $Gitlab_client is global hence it can be accessable any where in the application with out re-initializing the connection.
+$Gitlab_client = Gitlab.client(endpoint: Constants::API_END_POINT, private_token: Constants::PRIVATE_TOKEN)

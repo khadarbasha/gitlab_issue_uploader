@@ -1,0 +1,16 @@
+<div class="span6 well">
+  <%= form_for :file_upload, :url=>import_issues_path, :multipart=>true do |f| %>
+  <legend>
+    Pick the file
+    <hr>
+  </legend>
+  <%= f.hidden_field :project_id, :value => @project_id%>
+  <%= f.file_field :file, style:"visibility:hidden", id:"csvfile"%>
+  <div class="input-append">
+    <%= f.text_field :text, class:"input-xlarge", id:"subfile"%>
+    <a class="input-small btn btn-info" onclick="$('#csvfile').click();">Browse</a>
+  </div>
+  <br>
+  <%= f.submit :Upload, class:"input-medium btn btn-info"%>
+  <% end %>
+</div>

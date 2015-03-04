@@ -1,0 +1,14 @@
+  <div class="span6 well">
+    <legend>
+      Pick the Project
+      <hr>
+    </legend>
+    <%= form_for :user_pick ,:url=>download_issues_path(format: "csv") do |f| %>
+    <div class="input-append">
+      <% options = Project.all.collect{|p|[p.name,p.gitlab_id]}%>
+      <% options.unshift(["All","all"])%>
+      <%= f.select :project, options, class:"selectpicker"%>
+      <%= f.submit :Download, class:"input-small btn btn-info"%>
+    </div>
+    <% end %>
+  </div>

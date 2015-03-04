@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  gitlab_id: 1
+  tc_id: MyString
+  status: MyString
+  project: 
+
+two:
+  title: MyString
+  gitlab_id: 1
+  tc_id: MyString
+  status: MyString
+  project: 
